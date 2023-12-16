@@ -1,0 +1,78 @@
+*{
+    margin: auto;
+    text-align: center;
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)),url(newspaper.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+.tittle{
+    padding: auto;
+    margin-top: 200px;
+    text-align: center;
+    color:aliceblue;
+
+}
+h1{
+    color:white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 7px;
+
+}
+.para{
+   
+    padding: 4px;
+
+}
+.links{
+    padding-top:0.5cm;
+    color: aliceblue;
+}
+a{
+    color: antiquewhite;
+    text-decoration: none;
+}
+.mail{
+    padding-top: 1.5cm;
+    color: aqua;
+}
+i{
+    padding-top: 5cm;
+    margin-left: 10px;
+    size:2em;
+    color: aliceblue;    
+}
+a:hover:active:visited{
+    color:#260efd
+}
+input{
+    border: solid 2px rgb(245, 245, 245);
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(21, 255, 177);
+    border-radius: 10px;
+    letter-spacing: 2px;
+    color: aliceblue;
+
+}
+button{
+    border: solid 2px rgb(245, 245, 245);
+    width: 100px;
+    padding: 10px;
+    color: darkorange;
+    border-radius: 10px;
+}
+input:hover{
+    border: solid 5px whitesmoke;
+    color: ghostwhite;
+    outline: none;
+   
+}
+button:hover{
+        border: solid 5px hwb(0 100% 0%);
+        color: darkorange;
+        outline: none;
+        width: auto;
+}
