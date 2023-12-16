@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .slideshow2 {
+      position: relative;
+      width: 500px;
+      height: 300px;
+      overflow: hidden;
+    }
+    
+    .slideshow2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .slideshow2 .prev_div,
+    .slideshow2 .next_div {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 24px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 10px;
+      cursor: pointer;
+    }
+    
+    .slideshow2 .prev_div {
+      left: 0;
+    }
+    
+    .slideshow2 .next_div {
+      right: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="slideshow2">
+    
+    <i class="prev fas fa-chevron-left"></i>
+    <i class="next fas fa-chevron-right"></i>
+  </div>
+
+  <script>
+    const slideshow2 = document.querySelector('.slideshow2');
+    const prevBtn = document.querySelector('.prev_div');
+    const nextBtn = document.querySelector('.next_div');
+    const images = slideshow.querySelectorAll('img');
+    let currentIndex = 0;
+
+    function showDiv(index) {
+      images.forEach((image, i) => {
+        if (i === index) {
+          image.style.display = 'block';
+        } else {
+          image.style.display = 'none';
+        }
+      });
+    }
+
+    function showNextDiv() {
+      currentIndex++;
+      if (currentIndex >= images.length) {
+        currentIndex = 0;
+      }
+      showDiv(currentIndex);
+    }
+
+    function showPrevDiv() {
+      currentIndex--;
+      if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+      }
+      showImage(currentIndex);
+    }
+
+    prevBtn.addEventListener('click', showPrevDiv);
+    nextBtn.addEventListener('click', showNextDiv);
+  </script>
+</body>
+</html>

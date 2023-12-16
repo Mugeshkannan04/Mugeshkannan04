@@ -1,0 +1,274 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: rgba(237, 238, 250, 1);
+}
+.logo {
+    background-color: rgba(255, 255, 255, 0.279);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+.logo img{
+    padding: 0 2%;
+}
+
+#menu ul {
+    list-style-type: none;
+
+}
+
+#imagediv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#img {
+    animation-name: movement;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes movement {
+    0% {
+        opacity: 0;
+        transform: translate3d(350%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+#menu a{
+    text-decoration: none;
+    font-size: 120%;
+    margin : 0px 18px; 
+    color: white;
+    position: relative;
+
+}
+#menu a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color:#1b924b;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    display: inline;
+}
+#menu a:hover::after{
+    width: 77%;
+}
+
+.nav li {
+    display: inline;
+
+}
+
+.dropbtn {
+    color: white;
+    font-size: 120%;
+    border: none;
+    cursor: pointer;
+    padding: 13px 0px 22px 13px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    background: white;
+    display: none;
+    position: absolute;
+    color:#1B345F;
+    min-width: 125px;
+    z-index: 1;
+    margin-top: 21px;
+  
+
+}
+
+.dropdown-content a {
+    display: block;
+    font-size: 110%;
+    margin: 16px 2px;
+    color: #1B345F;
+    text-decoration: none;
+    position: relative;
+}
+
+.dropdown-content a::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background-color:#1b924b;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+    display: inline;
+    
+}
+.dropdown-content a:hover::after{
+    width:70%;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+.dropdown:hover i{
+     display: none;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1B345F;
+
+}
+#menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 16px 0px;
+    margin: 5px;
+}
+i{
+    align-items: center;
+   }
+   .name h1,h3{
+       margin: 0;
+   }
+#contact {
+    margin: 1cm 4cm;
+}
+
+#contact h1 {
+    letter-spacing: 7px;
+    font-size: 350%;
+}
+
+.mgs {
+    display: flex;
+    margin: 1cm;
+}
+
+#reach {
+    font-size: 310%;
+    margin-top: 2cm;
+}
+
+.mail {
+    margin-left: 4cm;
+    display: flex;
+    text-align: left;
+    font-size: 25px;
+    padding: 5px;
+    margin-top: 1cm;
+    width: 500px;
+    color: black;
+}
+
+#first {
+    display: block;
+    padding: 4px;
+}
+
+.mail input {
+    font-size: 23px;
+    width: 95%;
+    margin: 5% auto;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: solid 2px;
+    color: rgb(19, 19, 19);
+    /* background-color: ; */
+}
+
+.mail span input {
+    display: inline-flex;
+    width: 47.5%;
+}
+
+.mail label {
+    padding-right: 100px;
+    align-items: center;
+}
+
+.submit {
+    margin-top: 8px;
+    font-size: 18px;
+    padding: 3px 30px;
+    color: white;
+    background-color: gray;
+}
+
+#contactl {
+    background-color: black;
+    opacity: 50%;
+    color: white;
+}
+
+.phone {
+    margin-left: 1cm;
+    margin-top: 1cm;
+    margin-bottom: 10px;
+
+}
+
+.ph {
+    display: flex;
+}
+
+.ph h3 {
+    letter-spacing: 1px;
+    margin-left: .4cm;
+
+}
+
+.phone h5 {
+    padding-right: 250px;
+}
+
+.num {
+    display: flex;
+    padding-right: .1cm;
+    align-items: center;
+}
+
+.num h5 {
+    padding-right: 10.1cm;
+}
+
+#maine1 {
+    padding: left 5%;
+    ;
+}
+
+#pad {
+    padding-left: 12cm;
+    padding-right: 11cm;
+}
+
+i {
+    padding: 5px;
+    color: black;
+}
+
+i:hover {
+    cursor: pointer;
+}

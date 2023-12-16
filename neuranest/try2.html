@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .slider {
+            display: flex;
+            overflow: hidden;
+        }
+
+        .slide {
+            flex: 0 0 100%;
+            transition: transform 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+
+<div class="slider">
+    <div class="slide">
+        <img src="image1.jpg" alt="Image 1">
+        <p>Paragraph 1</p>
+    </div>
+    <div class="slide">
+        <img src="image2.jpg" alt="Image 2">
+        <p>Paragraph 2</p>
+    </div>
+    <!-- Add more slides as needed -->
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            if (index < 0 || index >= totalSlides) {
+                return; // Do nothing if index is out of bounds
+            }
+            currentSlide = index;
+            const translateValue = -currentSlide * 100 + '%';
+            document.querySelector('.slider').style.transform = 'translateX(' + translateValue + ')';
+        }
+
+        function showNextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function showPrevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        // Event listeners for navigation
+        document.querySelector('.fa-chevron-left').addEventListener('click', showPrevSlide);
+        document.querySelector('.fa-chevron-right').addEventListener('click', showNextSlide);
+    });
+</script>
+
+</body>
+</html>

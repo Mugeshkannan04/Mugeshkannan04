@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="slide">
+      <img src="image1.jpg" alt="Image 1">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="slide">
+      <img src="image2.jpg" alt="Image 2">
+      <p>Nulla facilisi. Sed euismod mauris nec mauris tincidunt.</p>
+    </div>
+    <div class="slide">
+      <img src="image3.jpg" alt="Image 3">
+      <p>Etiam auctor felis id nunc ultrices, nec lacinia nisl.</p>
+    </div>
+  </div>
+  
+  <style>
+  .container {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slide {
+    display: none;
+  }
+  
+  .slide:first-child {
+    display: block;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .slide p {
+    margin: 10px 0;
+  }
+  </style>
+  
+  <script>
+  const slides = document.querySelectorAll('.slide');
+  let currentSlide = 0;
+  
+  function showSlide(n) {
+    slides[currentSlide].style.display = 'none';
+    currentSlide = (n + slides.length) % slides.length;
+    slides[currentSlide].style.display = 'block';
+  }
+  
+  document.querySelector('.fa-chevron-left').addEventListener('click', () => {
+    showSlide(currentSlide - 1);
+  });
+  
+  document.querySelector('.fa-chevron-right').addEventListener('click', () => {
+    showSlide(currentSlide + 1);
+  });
+  </script>
+  

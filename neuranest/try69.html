@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Div Navigation</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+
+  <style>
+    .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  justify-content: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigation i {
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="div1">Div 1</div>
+    <div class="div2">Div 2</div>
+    <div class="div3">Div 3</div>
+  </div>
+  <div class="navigation">
+    <i class="fas fa-chevron-left" onclick="showPreviousDiv()"></i>
+    <i class="fas fa-chevron-right" onclick="showNextDiv()"></i>
+  </div>
+  <script>
+    function showPreviousDiv() {
+  var currentDiv = document.querySelector('.container div:not([style*="display: none"])');
+  var previousDiv = currentDiv.previousElementSibling || document.querySelector('.container div:last-child');
+  currentDiv.style.display = 'none';
+  previousDiv.style.display = 'block';
+}
+
+function showNextDiv() {
+  var currentDiv = document.querySelector('.container div:not([style*="display: none"])');
+  var nextDiv = currentDiv.nextElementSibling || document.querySelector('.container div:first-child');
+  currentDiv.style.display = 'none';
+  nextDiv.style.display = 'block';
+}
+
+  </script>
+</body>
+</html>

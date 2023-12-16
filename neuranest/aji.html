@@ -1,0 +1,117 @@
+<script>
+    // Function to initialize slideshow for a given container
+function initializeSlideshow(container) {
+  const slideshow = container.querySelector('.slideshow');
+  const prevBtn = container.querySelector('.prev');
+  const nextBtn = container.querySelector('.next');
+  const images = slideshow.querySelectorAll('img');
+  let currentIndex = 0;
+
+  function showImage(index) {
+    images.forEach((image, i) => {
+      if (i === index) {
+        image.style.display = 'block';
+      } else {
+        image.style.display = 'none';
+      }
+    });
+  }
+
+  function showNextImage() {
+    currentIndex++;
+    if (currentIndex >= images.length) {
+      currentIndex = 0;
+    }
+    showImage(currentIndex);
+  }
+
+  function showPrevImage() {
+    currentIndex--;
+    if (currentIndex < 0) {
+      currentIndex = images.length - 1;
+    }
+    showImage(currentIndex);
+  }
+
+  prevBtn.addEventListener('click', showPrevImage);
+  nextBtn.addEventListener('click', showNextImage);
+}
+
+// Initialize all slideshows
+const containers = document.querySelectorAll('.container #total');
+containers.forEach(container => initializeSlideshow(container));
+
+// Function to show the previous div
+function showPreviousDiv() {
+  var currentDiv = document.querySelector('.container #total:not([style*="display: none"])');
+  var previousDiv = currentDiv.previousElementSibling || document.querySelector('.container #total:last-child');
+  currentDiv.style.display = 'none';
+  previousDiv.style.display = 'block';
+}
+
+// Function to show the next div
+function showNextDiv() {
+  var currentDiv = document.querySelector('.container #total:not([style*="display: none"])');
+  var nextDiv = currentDiv.nextElementSibling || document.querySelector('.container #total');
+  currentDiv.style.display = 'none';
+  nextDiv.style.display = 'block';
+}
+
+</script>
+
+
+
+
+11111
+<script>
+    const slideshow = document.querySelector('.slideshow');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    const images = slideshow.querySelectorAll('img');
+    let currentIndex = 0;
+
+    function showImage(index) {
+      images.forEach((image, i) => {
+        if (i === index) {
+          image.style.display = 'block';
+        } else {
+          image.style.display = 'none';
+        }
+      });
+    }
+
+    function showNextImage() {
+      currentIndex++;
+      if (currentIndex >= images.length) {
+        currentIndex = 0;
+      }
+      showImage(currentIndex);
+    }
+
+    function showPrevImage() {
+      currentIndex--;
+      if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+      }
+      showImage(currentIndex);
+    }
+
+    prevBtn.addEventListener('click', showPrevImage);
+    nextBtn.addEventListener('click', showNextImage);
+
+    // // slide change start
+    // function showPreviousDiv() {
+    //   var currentDiv = document.querySelector('.container #total:not([style*="display: none"])');
+    //   var previousDiv = currentDiv.previousElementSibling || document.querySelector('.container #total');
+    //   currentDiv.style.display = 'none';
+    //   previousDiv.style.display = 'block';
+    // }
+
+    // function showNextDiv() {
+    //   var currentDiv = document.querySelector('.container #total:not([style*="display: none"])');
+    //   var nextDiv = currentDiv.nextElementSibling || document.querySelector('.container #total');
+    //   currentDiv.style.display = 'none';
+    //   nextDiv.style.display = 'block';
+    // }// slide change end
+
+  </script>

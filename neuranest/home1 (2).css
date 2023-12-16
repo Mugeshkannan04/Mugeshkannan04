@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    animation-name: backg;
+    animation-duration: 3s;
+    background-color: rgba(237, 238, 250, 1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 5em;
+    font-family: serif;
+    letter-spacing: 35px;
+    color: #1B345F;
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+@keyframes example {
+    0% {
+        opacity: 0;
+        transform: translate3d(-150%, 0,0 );
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes backg {
+    0% {
+        background-color: rgba(237, 238, 250, 0.2)
+    }
+
+    50% {
+        background-color: rgba(237, 238, 250, 0.5)
+    }
+
+    75% {
+        background-color: rgba(237, 238, 250, 0.7)
+    }
+
+    90% {
+        background-color: rgba(237, 238, 250, 0.9)
+    }
+
+    100% {
+        background-color: rgba(237, 238, 250, 1)
+    }
+}
+
+H2 {
+    text-align: center;
+    font-size: 3em;
+    letter-spacing: 15px;
+    color: #1b8092;
+    animation-name: example;
+    animation-duration: 2s;
+}
+
+.logo {
+    margin-left: 1cm;
+
+}
+
+ul {
+    list-style-type: none;
+    margin-right: 1.5cm;
+
+}
+
+#img {
+    margin-left: 43.5%;
+    margin-top: 4%;
+    
+    animation-name: movement;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@keyframes movement {
+    0% {
+        opacity: 0;
+        transform: translate3d(350%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 18px;
+    font-size: 120%;
+    color: white;
+
+}
+
+li {
+    display: inline;
+
+}
+a:hover {
+        background-color:#1b924b;
+        color:white;
+}
+    
+
+.dropbtn {
+
+    color: white;
+    padding: 18px;
+    font-size: 120%;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    min-width: 125px;
+    z-index: 1;
+    list-style-type: circle;
+    padding: 0;
+    margin-top: 17px;
+}
+
+.dropdown-content a {
+    color: #1B345F;
+    padding: 16px 0px;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+}
+
+.dropdown-content a:hover {
+    background-color: #1B345F;
+    color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #1b924b;
+    color:white;
+
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1B345F;
+
+}

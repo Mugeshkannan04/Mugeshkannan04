@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.images {
+    /* include three image*/
+    display: flex;
+    align-items: center;
+}
+
+.pic {
+    transition: transform 0.3s ease-in-out;
+}
+
+.pic:hover {
+    transform: scale(1.1);
+
+}
+
+/* .images img{     each image  
+    position: relative;
+    padding: 2%;
+    
+} */
+.event_page h1 {
+    /* event tittle*/
+    text-align: center;
+    margin: 1% 15%;
+    color: #1b345f;
+    font-size: 250%;
+
+}
+
+.event_page {
+    border: 3px solid #1b924b;
+    border-radius: 24px;
+    width: 50%;
+    display: inline-block;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-top: 1%;
+    background-color: #fff;
+
+
+}
+
+.icon {
+    /*total icon */
+    font-size: 200%;
+    display: grid;
+}
+
+i {
+    /* each icon*/
+    padding: 15px;
+    color: #1b345f;
+}
+
+.time_date {
+    /* whole(logo and date,time)*/
+    display: inline-flex;
+    align-items: center;
+    float: right;
+}
+
+.data h6 {
+    padding-top: 15px;
+    color: #1b924b;
+}
+
+.data p {
+    padding-bottom: 15px;
+}
+
+.guest {
+    width: 50%;
+}
+.guest h2{
+    color: #1b345f;
+    margin-bottom: 3%;
+}
+.guest p{
+    color: #1b924b;
+    margin:5% 5% 5% 0%;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin: 2% 2%;
+    text-align: left;
+}
+
+.but_slide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    margin: 0px 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* image slide start */
+
+.slideshow {
+    position: relative;
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+    display: block;
+    margin: 10px auto;
+
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.slideshow .prev,
+.slideshow .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.slideshow .prev {
+    left: 0;
+}
+
+.slideshow .next {
+    right: 0;
+}
+
+/* image slide end */
+
+/* div slide start */
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  justify-content: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.navigation i {
+  cursor: pointer;
+} */
+/* div slide end */

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/png" href="neupng.png">
+    <link rel="stylesheet" href="contact1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+</head>
+
+<body>
+    <div class="logo">
+        <img src="kprlogo.png" alt="KPR logo" width="100px" height="80%">
+        <div class="name">
+            <h1>KPR Institute of Engineering & Technology </h1>
+            <h3>Arasur -Coimbatore</h3>
+        </div>
+    </div>
+    <div class="main-cont">
+        <div class="nav">
+            <ul id="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="faculty.html">Faculties</a></li>
+                <li><a href="ofcb.html">Office Bearer</a></li>
+                <li><a href="">Contact Us</a></li>
+
+            </ul>
+            <div class="dropdown">
+                <div class="eventbut">
+                    <li class="dropbtn">Event </li>
+                    <i class="fa-solid fa-caret-down" style="color: #ffffff;"></i>
+                </div>
+                <div class="dropdown-content">
+                    <a href="eve.html">Upcoming Event</a>
+                    <a href="pastevent.html">Past Event</a>
+                    <a href="#">Acheivements</a>
+                </div>
+            </div>
+        </div>
+    <div id="contact">
+        <div class="mgs">
+            <h2 id="reach">
+                For Any Assistance <br><br>
+                Required Please <br><br>
+                Reach Out</h2>
+            <div class="mail">
+                <form action="">
+                    <span id="first"><label for="firstname">First Name *</label>
+                        <label for="lastname">Last Name *</label><br>
+                        <input id="name1" type="text">
+                        <input id="name2" type="text"></span>
+                    <label for="email">E-Mail *</label><br>
+                    <input id="email" type="text"><br>
+                    <label for="Message">Message *</label><br>
+                    <input id="Message" type="text"><br>
+                    <button class="submit" type="submit" value="Submit" onclick="submitForm()">Submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="phone">
+            <div class="ph">
+                <h3>Phone</h3>
+                <h3 id="pad">E-mail</h3>
+                <i></i>
+                <h3>Social Media</h3>
+            </div>
+            <div class="num">
+                <i class="fa-solid fa-phone" style="color: #3c609f;"></i>
+                <h5>+91 9789210135</h5>
+                <i class="fa-regular fa-envelope" style="color: #bc2929;"></i>
+                <h5>22AM036@kpriet.ac.in</h5>
+                <a href="https://www.linkedin.com/in/s-mugesh-kannan-9a4612257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"><i class="fa-brands fa-linkedin" style="color: #0077b5;"></i></a>
+                <a href="https://github.com/MUGESHKANNANS" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://instagram.com/kannanmugesh04?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i
+                        class="fa-brands fa-instagram" style="color: #C13584;"></i></a>
+                <a href="https://wa.me/qr/VMWOOZ5GIUOXD1" target="_blank"> <i class="fa-brands fa-whatsapp"
+                        style="color: #34c245;"></i></a>
+                <a href="https://x.com/SMugeshKannan1?t=68L0s_DAkMThbWZSjRFH0A&s=03" target="_blank"> <i
+                        class="fa-brands fa-twitter" style="color:#1DA1F2 ;"></i>
+            </div></a>
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+    <script>
+        function submitForm() {
+
+            var name1 = document.getElementById("name1").value;
+            var name2 = document.getElementById("name2").value;
+            alert(name1 + name2 + "\nYour Message Sent Successfully");
+            return false;
+        }
+    </script>
+</body>
+
+</html>

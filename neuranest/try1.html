@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha384-cC/CS/ClU6R8Pv9bqKJLr4ZYjQD7ScC+GL2b0tTE8AIjGn3PZyEHSaBUvOrFJrXz" crossorigin="anonymous">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .image-container {
+            position: relative;
+            width: 300px; /* Adjust the width as needed */
+            height: 200px; /* Adjust the height as needed */
+            overflow: hidden;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .image-list {
+            display: flex;
+            width: 300%; /* Adjust the width based on the number of images */
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .image {
+            width: 33.33%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            color: #333;
+            background: none;
+            border: none;
+            outline: none;
+            z-index: 1;
+        }
+
+        .nav-button.left {
+            left: 10px;
+        }
+
+        .nav-button.right {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+    <button class="nav-button left" onclick="showImage('prev')"> <i class="fas fa-chevron-left"></i> </button>
+    <div class="image-list">
+        <img src="img1_1464.jpg" alt="Image 1" class="image">
+        <img src="poster_1464.jpg" alt="Image 2" class="image">
+        <img src="img2_1464.jpg" alt="Image 3" class="image">
+        <!-- Add more images as needed -->
+    </div>
+    <button class="nav-button right" onclick="showImage('next')"> <i class="fas fa-chevron-right"></i> </button>
+</div>
+
+<script>
+    let currentIndex = 0;
+    const imageList = document.querySelector('.image-list');
+    const images = document.querySelectorAll('.image');
+
+    function showImage(direction) {
+        currentIndex = (direction === 'next') ? Math.min(currentIndex + 1, images.length - 1) : Math.max(currentIndex - 1, 0);
+        const translateValue = -currentIndex * 33.33 + '%';
+        imageList.style.transform = 'translateX(' + translateValue + ')';
+    }
+</script>
+
+</body>
+</html>

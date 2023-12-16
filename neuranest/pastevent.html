@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="pastevent.css">
+<link rel="stylesheet" href="home1.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Past Event</title>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="logo">
+      <img src="logo big.webp" alt="KPR logo" width="140px" height="100%" style="padding: 5px;">
+    </div>
+    <div class="right">
+      <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Faculties</a></li>
+        <li><a href="#">Office Bearer</a></li>
+        <div class="dropdown">
+          <li class="dropbtn">Event</li>
+          <div class="dropdown-content">
+            <li><a href="#">Upcoming Event</a></li>
+            <li><a href="#">Past Event</a></li>
+            <li><a href="#">Acheivements</a></li>
+          </div>
+        </div>
+      </ul>
+    </div>
+  </div>
+  <div class="container">
+    <div class="total">
+      <div class="event_page">
+        <h1>ASSOCIATION INAUGURATION</h1>
+        <div class="images">
+          <div class="slideshow">
+            <img src="img1_1464.jpg" alt="Image 1">
+            <img src="img2_1464.jpg" alt="Image 2">
+            <img src="poster_1464.jpg" alt="Image 3">
+            <i class="prev fas fa-chevron-left"></i>
+            <i class="next fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="info">
+          <div class="guest">
+            <h2>Chief Guest</h2>
+            <h3>Dr. Saravanakumar</h3>
+            <p>Senior Software Architect, Bosch Global Software
+              Technologies was the Chief Guest of the Event.
+              He delivered the address on 'GEN AI and Data Analytics'</p>
+          </div>
+          <div class="time_date">
+            <div class="icon">
+              <i class="fa-regular fa-clock"></i>
+              <i class="fa-solid fa-calendar-days"></i>
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <DIV class="data">
+              <h6>DATE</h6>
+              <P>Sep 30, 2023</P>
+              <H6>TIME</H6>
+              <P>10:30 AM to 12:30 PM</P>
+              <H6>LOCATION</H6>
+              <P>Thanam Hall</P>
+            </DIV>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="total">
+    <div class="event_page">
+      <h1>ASSOCIATION INAUGURATION</h1>
+      <div class="images">
+        <div class="slideshow">
+          <img src="img1_1464.jpg" alt="Image 1">
+          <img src="img2_1464.jpg" alt="Image 2">
+          <img src="poster_1464.jpg" alt="Image 3">
+          <i class="prev fas fa-chevron-left"></i>
+          <i class="next fas fa-chevron-right"></i>
+        </div>
+      </div>
+      <div class="info">
+        <div class="guest">
+          <h2>Chief Guest</h2>
+          <h3>Dr. Saravanakumar</h3>
+          <p>Senior Software Architect, Bosch Global Software
+            Technologies was the Chief Guest of the Event.
+            He delivered the address on 'GEN AI and Data Analytics'</p>
+        </div>
+        <div class="time_date">
+          <div class="icon">
+            <i class="fa-regular fa-clock"></i>
+            <i class="fa-solid fa-calendar-days"></i>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <DIV class="data">
+            <h6>DATE</h6>
+            <P>Sep 30, 2023</P>
+            <H6>TIME</H6>
+            <P>10:30 AM to 12:30 PM</P>
+            <H6>LOCATION</H6>
+            <P>Thanam Hall</P>
+          </DIV>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="total">
+    <div class="event_page">
+      <h1>ASSOCIATION INAUGURATION</h1>
+      <div class="images">
+        <div class="slideshow">
+          <img src="img1_1464.jpg" alt="Image 1">
+          <img src="img2_1464.jpg" alt="Image 2">
+          <img src="poster_1464.jpg" alt="Image 3">
+          <i class="prev fas fa-chevron-left"></i>
+          <i class="next fas fa-chevron-right"></i>
+        </div>
+      </div>
+      <div class="info">
+        <div class="guest">
+          <h2>Chief Guest</h2>
+          <h3>Dr. Saravanakumar</h3>
+          <p>Senior Software Architect, Bosch Global Software
+            Technologies was the Chief Guest of the Event.
+            He delivered the address on 'GEN AI and Data Analytics'</p>
+        </div>
+        <div class="time_date">
+          <div class="icon">
+            <i class="fa-regular fa-clock"></i>
+            <i class="fa-solid fa-calendar-days"></i>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <DIV class="data">
+            <h6>DATE</h6>
+            <P>Sep 30, 2023</P>
+            <H6>TIME</H6>
+            <P>10:30 AM to 12:30 PM</P>
+            <H6>LOCATION</H6>
+            <P>Thanam Hall</P>
+          </DIV>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const slideshow = document.querySelector('.slideshow');
+    const prevBtn = document.querySelector('.prev');
+    const nextBtn = document.querySelector('.next');
+    const images = slideshow.querySelectorAll('img');
+    let currentIndex = 0;
+
+    function showImage(index) {
+      images.forEach((image, i) => {
+        if (i === index) {
+          image.style.display = 'block';
+        } else {
+          image.style.display = 'none';
+        }
+      });
+    }
+
+    function showNextImage() {
+      currentIndex++;
+      if (currentIndex >= images.length) {
+        currentIndex = 0;
+      }
+      showImage(currentIndex);
+    }
+
+    function showPrevImage() {
+      currentIndex--;
+      if (currentIndex < 0) {
+        currentIndex = images.length - 1;
+      }
+      showImage(currentIndex);
+    }
+
+    prevBtn.addEventListener('click', showPrevImage);
+    nextBtn.addEventListener('click', showNextImage);
+
+    // // slide change start
+    // function showPreviousDiv() {
+    //   var currentDiv = document.querySelector('.container #total:not([style*="display: none"])');
+    //   var previousDiv = currentDiv.previousElementSibling || document.querySelector('.container #total');
+    //   currentDiv.style.display = 'none';
+    //   previousDiv.style.display = 'block';
+    // }
+
+    // function showNextDiv() {
+    //   var currentDiv = document.querySelector('.container #total:not([style*="display: none"])');
+    //   var nextDiv = currentDiv.nextElementSibling || document.querySelector('.container #total');
+    //   currentDiv.style.display = 'none';
+    //   nextDiv.style.display = 'block';
+    // }// slide change end
+
+  </script>
+</body>
+
+</html>
