@@ -1,0 +1,195 @@
+body{
+    background-color: aliceblue;
+    margin: 0;
+    border: 0;
+}
+
+#mk{
+    margin-left: 30px;
+    padding: 0px;
+    color: #b80000;
+    text-size-adjust: 30px;
+    align-items: left center;
+    font-size: xx-large;
+}
+
+.navi{
+    position: fixed;
+    display: flex;
+    background-color: bisque;
+    margin: 0;
+    align-items: center;
+    width: 100%;
+    border: 0;
+    padding: 0;
+}
+.top{
+    align-items: left;
+    margin-right: 20px;
+    display:inline;
+    text-decoration: none;
+    color: brown;
+    font-size: large;
+    margin-left: 26cm; 
+    padding-left: 30px;   
+}
+.con{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:darkcyan ;
+    padding-top: 2.4cm;
+    padding-left: 1.2cm;
+}
+#img{
+    margin-top: 3cm;
+    align-items: left;
+    margin-right: 20px;
+    margin-left: 180px;
+}
+.cont{
+    display: flex;
+    padding-top: 0.5cm;
+    padding-left: 10px;
+}
+.top a{
+    padding: 7px;
+    text-decoration: none;
+    color: blue;
+}
+.top a:active{
+    color: #ff0000;
+}
+span{
+    padding-left: 5px;
+}
+.cont h1{
+    letter-spacing: 10px;
+    font-size: 500%;
+}
+.cont h5{
+    padding-bottom: 10px;
+    letter-spacing: 4px;
+}
+#About{
+    margin: 1cm 5cm;
+}
+#head{
+    padding: auto;
+    letter-spacing: 9px;
+    font-size: 350%;
+    color:darkslategray
+}
+.ame{
+    font-size: 150%;
+    color: darkcyan;
+}
+.ame h2{
+    margin:2cm 1%;
+    font-size: 150%;
+    color: darkslategray;
+    letter-spacing: 1px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.ame p{
+    width: 980px;
+    margin-left: 4%;
+}
+#contact{
+    margin: 1cm 4cm;
+}
+#contact h1{
+    letter-spacing: 7px;
+    font-size: 350%;
+}
+.mgs{
+    display:flex;
+    margin: 1cm;
+}
+#reach{
+    font-size: 310%;
+    margin-top: 2cm;
+}
+.mail{
+    margin-left:4cm;
+    display: flex;
+    text-align: left;
+    font-size: 25px;
+    padding: 5px;
+    margin-top: 1cm;
+    width: 500px;
+    color: black;
+}
+#first{
+    display:block;
+    padding: 4px;
+}
+.mail input{
+    font-size: 23px;
+    width: 95%;
+    margin: 5% auto;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-bottom: solid 2px;
+    color:rgb(19, 19, 19);
+    /* background-color: ; */
+}
+.mail span input{
+    display: inline-flex;
+    width: 47.5%;
+}
+.mail label{
+    padding-right: 100px;
+    align-items: center;
+}
+.submit{
+    margin-top: 8px;
+    font-size: 18px;
+    padding: 3px 30px;
+    color:white;
+    background-color: gray;
+}
+#contactl{
+    background-color: black;
+    opacity: 50%;
+    color: white;
+}
+.phone{
+    margin-left: 1cm;
+    margin-top: 1cm;
+    margin-bottom: 10px;
+
+}
+.ph{
+    display: flex;  
+}
+.ph h3{
+    letter-spacing: 1px;
+    margin-left:.4cm ;
+   
+}
+.phone h5{
+    padding-right: 250px;
+}
+.num{
+    display: flex;
+    padding-right:.1cm;
+    align-items: center;
+}
+.num h5{
+    padding-right: 10.1cm;
+}
+#maine1{
+    padding: left 5%;;
+}
+#pad{
+    padding-left: 12cm;
+    padding-right: 11cm;
+}
+i{
+    padding: 5px;
+    color:black;
+}
+i:hover{
+    cursor: pointer;
+}

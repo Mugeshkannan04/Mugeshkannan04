@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+</head>
+
+<body>
+    
+    <style>
+        #contact {
+            margin: 1cm 4cm;
+        }
+
+        #contact h1 {
+            letter-spacing: 7px;
+            font-size: 350%;
+        }
+
+        .mgs {
+            display: flex;
+            margin: 1cm;
+        }
+
+        #reach {
+            font-size: 310%;
+            margin-top: 2cm;
+        }
+
+        .mail {
+            margin-left: 4cm;
+            display: flex;
+            text-align: left;
+            font-size: 25px;
+            padding: 5px;
+            margin-top: 1cm;
+            width: 500px;
+            color: black;
+        }
+
+        #first {
+            display: block;
+            padding: 4px;
+        }
+
+        .mail input {
+            font-size: 23px;
+            width: 95%;
+            margin: 5% auto;
+            border: none;
+            background: transparent;
+            outline: none;
+            border-bottom: solid 2px;
+            color: rgb(19, 19, 19);
+            /* background-color: ; */
+        }
+
+        .mail span input {
+            display: inline-flex;
+            width: 47.5%;
+        }
+
+        .mail label {
+            padding-right: 100px;
+            align-items: center;
+            font-size: 23px;
+            width: 95%;
+            margin: 5% auto;
+            border: none;
+            background: transparent;
+            outline: none;
+            border-bottom: solid 2px;
+            color:rgb(19, 19, 19);
+        }
+
+        .submit {
+            margin-top: 8px;
+            font-size: 18px;
+            padding: 3px 30px;
+            color: white;
+            background-color: gray;
+        }
+
+        #contactl {
+            background-color: black;
+            opacity: 50%;
+            color: white;
+        }
+
+        .phone {
+            margin-left: 1cm;
+            margin-top: 1cm;
+            margin-bottom: 10px;
+
+        }
+
+        .ph {
+            display: flex;
+        }
+
+        .ph h3 {
+            letter-spacing: 1px;
+            margin-left: .4cm;
+
+        }
+
+        .phone h5 {
+            padding-right: 250px;
+        }
+
+        .num {
+            display: flex;
+            padding-right: .1cm;
+            align-items: center;
+        }
+
+        .num h5 {
+            padding-right: 10.1cm;
+        }
+
+        #maine1 {
+            padding: left 5%;
+            ;
+        }
+
+        #pad {
+            padding-left: 12cm;
+            padding-right: 11cm;
+        }
+
+        i {
+            padding: 5px;
+            color: black;
+        }
+
+        i:hover {
+            cursor: pointer;
+        }
+    </style>
+    <div id="contact">
+        <div class="mgs">
+            <h2 id="reach">
+                For Any Assistance <br><br>
+                Required Please <br><br>
+                Reach Out</h2>
+            <div class="mail">
+                <form action="send_email.php" method="post">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                    <br>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                    <br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <br>
+                    <input type="submit" value="Submit" onclick="submitForm()">
+                </form>
+            </div>
+        </div>
+        <div class="phone">
+            <div class="ph">
+                <h3>Phone</h3>
+                <h3 id="pad">E-mail</h3>
+                <i></i>
+                <h3>Social Media</h3>
+            </div>
+            <div class="num">
+                <i class="fa-solid fa-phone" style="color: #3c609f;"></i>
+                <h5>+91 9789210135</h5>
+                <i class="fa-regular fa-envelope" style="color: #bc2929;"></i>
+                <h5>22AM036@kpriet.ac.in</h5>
+                <a href="https://www.linkedin.com/in/s-mugesh-kannan-9a4612257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"><i class="fa-brands fa-linkedin" style="color: #0077b5;"></i></a>
+                <a href="https://github.com/MUGESHKANNANS" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://instagram.com/kannanmugesh04?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i
+                        class="fa-brands fa-instagram" style="color: #C13584;"></i></a>
+                <a href="https://wa.me/qr/VMWOOZ5GIUOXD1" target="_blank"> <i class="fa-brands fa-whatsapp"
+                        style="color: #34c245;"></i></a>
+                <a href="https://x.com/SMugeshKannan1?t=68L0s_DAkMThbWZSjRFH0A&s=03" target="_blank"> <i
+                        class="fa-brands fa-twitter" style="color:#1DA1F2 ;"></i>
+            </div></a>
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+    <script>
+        function submitForm() {
+
+            var name1 = document.getElementById("name1").value;
+            var name2 = document.getElementById("name2").value;
+            alert(name1 + name2 + "\nYour Message Sent Successfully");
+            return false;
+        }
+    </script>
+</body>
+
+</html>

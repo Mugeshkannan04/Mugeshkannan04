@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mugesh kannan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="head">
+        <div class="navi">
+            <h2 id="mk">Portfolio</h2>
+            <div class="top">
+                <a href="">Resume <span>|</span></a>
+                <a href="#me">About Me <span>|</span> </a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+        <div>
+            <div class="cont">
+                <img id="img" tittle="MUGESH KANNAN.S" src="mugeshpic.jpg" alt="MUGESH" width="450px" height="100%">
+                <pre class="con">
+                <h1>I'm <br>MUGESH <br>KANNAN.</h1><H5>Full stack developer | ML <br><br>Blockchain Developer <br><br>Cyber Security</H5>
+                <p id="me"></p>
+            </pre>
+            </div>
+            <div id="clik">
+                <div id="ab">
+                    <div id="About"><p> </p>
+                        <h1 id="head">ABOUT ME</h1>
+                        <div class="ame"><p>
+                            HELLO !
+                            Myself Mugesh kannan S,
+                            Dedicated second-year Computer Science Engineering student with a 
+                            specialization in Artificial Intelligenceand Machine Learning at 
+                            KPR Institute of Engineering and Technology, Coimbatore. I am
+                            a strong foundation in web development and programming, actively 
+                            pursuing expertise in Java, and aspiring to becomea Blockchain 
+                            Developer.</p>
+                            <h2>Skills :</h2><p>
+                            Proficient in HTML, CSS, and JavaScript, with hands-on experience 
+                            in web development.Currently learning Java to enhance programming 
+                            skills. Strong analytical and problem-solving abilities. Excellent 
+                            teamwork and leadership skills gained through NCC cadet training. 
+                            Enthusiastic about blockchain technology and eager to build a career 
+                            in this field.</p>
+                            <h2>Professional Goals:</h2><p>
+                            Motivated by a passion for blockchain technology and the potential it 
+                            holds for transforming industries, I aim to become a proficient Blockchain 
+                            Developer. My ongoing education in AI and ML,combined with my web development 
+                            and programming skills, will provide a strong foundation for this journey. I am 
+                            dedicated to continuously enhancing my knowledge and skills in blockchain and 
+                            contributing to innovative projects in this exciting field.</p>
+                            <h2>NCC :</h2><p>
+                            Currently serving as an NCC Cadet, developing discipline, leadership, 
+                            and teamwork skills. Participated in various NCC training programs 
+                            and events, fostering a sense of duty and responsibility.
+                            It's not only about DRILL Ragda, Punishment Camps, Ranks or Uniform...
+                            It is all about developing yourself better than yesterday....
+                            Every smallest thing teaches you a lot RESPECT is what you give and 
+                            EARN! Officers & Ustands of Indian Army are your Teachers! 
+                            Beat every obstacle in your way Never ever leave your buddy behind. 
+                            When you lead a contingent, it reflects all your hard work on each & 
+                            every cadet in the contingent....
+                            No one can beat you when you stand United! You experience that learning is
+                            easy, teaching is difficult you learn that sharing is as important as caring NCC 
+                            gives you not only a rank but when you complete NCC it also leaves a rank behind 
+                            your name as Ex NCC Cadet!!!</p>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+            <div id="contact">
+                <div class="mgs">
+                <h2 id="reach">
+                    For Any Assistance <br><br>
+                    Required Please <br><br>
+                    Reach Out</h2>
+                    <div class="mail">
+                        <form action="">
+                        <span id="first"><label for="firstname">First Name *</label>
+                            <label for="lastname">Last Name *</label><br>
+                            <input id="name1" type="text">
+                            <input id="name2" type="text"></span>
+                            <label for="email">E-Mail *</label><br>
+                            <input id="email" type="text"><br>
+                            <label for="Message">Message *</label><br>
+                            <input id="Message" type="text"><br>
+                            <button  class="submit" type="submit" value="Submit" onclick="submitForm()">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            <div class="phone">
+                <div class="ph">
+                <h3>Phone</h3>
+                <h3 id="pad">E-mail</h3>
+                <i></i>
+                <h3>Social Media</h3>  
+                </div>
+                <div class="num">
+                <i id="mine1" class="fa-solid fa-phone" style="color: #3c609f;"></i>
+                <h5>+91 9789210135</h5>
+                <i id="mmine2" class="fa-regular fa-envelope" style="color: #bc2929;"></i>
+                <h5>22AM036@kpriet.ac.in</h5>  
+                <a href="https://www.linkedin.com/in/s-mugesh-kannan-9a4612257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin" style="color: #0077b5;"></i></a> 
+                <a href="https://github.com/MUGESHKANNANS" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://instagram.com/kannanmugesh04?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i class="fa-brands fa-instagram" style="color: #C13584;"></i></a>
+                <a href="https://wa.me/qr/VMWOOZ5GIUOXD1" target="_blank"> <i class="fa-brands fa-whatsapp" style="color: #34c245;"></i></a>
+                <a href="https://x.com/SMugeshKannan1?t=68L0s_DAkMThbWZSjRFH0A&s=03" target="_blank"> <i class="fa-brands fa-twitter" style="color:#1DA1F2 ;"></i></div></a>
+            </div>
+                
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function submitForm() {
+
+            var name1 = document.getElementById("name1").value;
+            var name2 = document.getElementById("name2").value;
+            alert( name1+name2 +  "\nYour Message Sent Successfully");
+            return false;
+        }
+    </script>
+</body>
+
+</html>
